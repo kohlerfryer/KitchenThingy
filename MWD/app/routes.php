@@ -20,3 +20,10 @@ Route::get('kitchen_dreamer', function()
 {
 	return View::make('kitchen_dreamer');
 });
+
+Route::get('admin', function()
+{
+	return View::make('admin');
+});
+
+Route::post('admin_panel/add_stone', 'AdminController@add_stone');
